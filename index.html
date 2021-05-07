@@ -10,12 +10,12 @@
     <script>
         var p = prompt('Введите число');
         var str = '';
-       for (var i = 1; i <= p; i++) {
+       for (var i = 0; i < p; i++) {
            for (var j = 1; j <= p-i; j++) {
                str = str + ' ';
            }
-           for (var k = 1; k <= i; k++) {
-               str = str + '* ';
+           for (var k = 0; k < 2 * i + 1; k++) {
+               str = str + '*';
            }
            str = str + '\n';
        }
